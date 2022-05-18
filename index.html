@@ -1,0 +1,136 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <!---Meta--->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Dashboard Mini">
+    <meta name="robots" content="noindex">
+    <meta name="robots" content="nofollow">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <!---Page Icon---> 
+  <link rel="shortcut icon" href="https://king-pacaya.github.io/doc-storage/img/dashboard/favicon.png">
+  <!--CSS Documents-->
+    <script src="https://kit.fontawesome.com/6f917e9db0.js" crossorigin="anonymous"></script>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  <!--Fonts-->
+    <!--All-->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+      <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@500&display=swap" rel="stylesheet">
+    <!--Navbar-->
+    <!--Font-->
+  <title>𝑴𝒊𝒏𝒊</title>
+</head>
+<body id="fondo">
+  <!--------------------------------------------Left Navbar-------------------------------------------->
+    <div class="nav-left">
+      <button class="dnv" id="mode">
+        <svg class="m1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M6 .278a.768.768 0 0 1 .08.858 7.208 7.208 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277.527 0 1.04-.055 1.533-.16a.787.787 0 0 1 .81.316.733.733 0 0 1-.031.893A8.349 8.349 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.752.752 0 0 1 6 .278zM4.858 1.311A7.269 7.269 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.316 7.316 0 0 0 5.205-2.162c-.337.042-.68.063-1.029.063-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286z"/>
+        </svg>
+        <svg class="m2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M8 11a3 3 0 1 1 0-6 3 3 0 0 1 0 6zm0 1a4 4 0 1 0 0-8 4 4 0 0 0 0 8zM8 0a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 0zm0 13a.5.5 0 0 1 .5.5v2a.5.5 0 0 1-1 0v-2A.5.5 0 0 1 8 13zm8-5a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2a.5.5 0 0 1 .5.5zM3 8a.5.5 0 0 1-.5.5h-2a.5.5 0 0 1 0-1h2A.5.5 0 0 1 3 8zm10.657-5.657a.5.5 0 0 1 0 .707l-1.414 1.415a.5.5 0 1 1-.707-.708l1.414-1.414a.5.5 0 0 1 .707 0zm-9.193 9.193a.5.5 0 0 1 0 .707L3.05 13.657a.5.5 0 0 1-.707-.707l1.414-1.414a.5.5 0 0 1 .707 0zm9.193 2.121a.5.5 0 0 1-.707 0l-1.414-1.414a.5.5 0 0 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .707zM4.464 4.465a.5.5 0 0 1-.707 0L2.343 3.05a.5.5 0 1 1 .707-.707l1.414 1.414a.5.5 0 0 1 0 .708z"/>
+        </svg>
+      </button>
+
+      <button class="dnv" onclick="colorbtn()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16">
+          <path d="M8 5a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zm4 3a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3zM5.5 7a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0zm.5 6a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3z"/>
+          <path d="M16 8c0 3.15-1.866 2.585-3.567 2.07C11.42 9.763 10.465 9.473 10 10c-.603.683-.475 1.819-.351 2.92C9.826 14.495 9.996 16 8 16a8 8 0 1 1 8-8zm-8 7c.611 0 .654-.171.655-.176.078-.146.124-.464.07-1.119-.014-.168-.037-.37-.061-.591-.052-.464-.112-1.005-.118-1.462-.01-.707.083-1.61.704-2.314.369-.417.845-.578 1.272-.618.404-.038.812.026 1.16.104.343.077.702.186 1.025.284l.028.008c.346.105.658.199.953.266.653.148.904.083.991.024C14.717 9.38 15 9.161 15 8a7 7 0 1 0-7 7z"/>
+        </svg>
+      </button>
+    </div>
+
+  <!------------------------------------------------Color------------------------------------------------->
+        <div id="ccolor" class="color-content">
+          <h1>Escoje tu paleta preferida</h1>
+          <div class="dcc">
+            <h2>Esta es tu paleta de modo diurno</h2>
+
+            <p>Color Principal</p>
+            <div style="width: 100%" class="idc">
+              <input type="color" id="pcl" oninput="cpcl()">
+              <div class="ddcc" style="background: var(--pcl);"></div>
+            </div>
+
+            <p>Color Secundario</p>
+            <div style="width: 100%" class="idc">
+              <input type="color" id="scl" oninput="cscl()">
+              <div class="ddcc" style="background: var(--scl);"></div>
+            </div>
+
+            <p>Color de Fondo</p>
+            <div style="width: 100%" class="idc">
+              <input type="color" id="bgcl" oninput="cbgcl()">
+              <div class="ddcc" style="background: var(--bgcl);"></div>
+            </div>
+          </div>
+
+          <div class="dcc">
+            <h2>Esta es tu paleta de modo nocturno</h2>
+
+            <p>Color Principal</p>
+            <div style="width: 100%" class="idc">
+              <input type="color" id="pcn" oninput="cpcn()">
+              <div class="ddcc" style="background: var(--pcn);"></div>
+            </div>
+
+            <p>Color Secundario</p>
+            <div style="width: 100%" class="idc">
+              <input type="color" id="scn" oninput="cscn()">
+              <div class="ddcc" style="background: var(--scn);"></div>
+            </div>
+
+            <p>Color de Fondo</p>
+            <div style="width: 100%" class="idc">
+              <input type="color" id="bgcn" oninput="cbgcn()">
+              <div class="ddcc" style="background: var(--bgcn);"></div>
+            </div>
+          </div>
+
+          <h4>Recuerda que al momento de editar tus paletas de colores ya no será posible volver a los valores predeterminados</h4>
+        </div>
+      
+
+  <!----------------------------------------------Bookmarks---------------------------------------------->
+    <div class="bookmarks">
+      <!---------------------------------------------Open Modal--------------------------------------------->
+        <div class="btittle">
+          <p>Quick Access</p>
+          <h1 id="show-modal">+</h1>
+        </div>
+        <div class="container" id="bookmarks-container">
+        </div>
+        <!-- Modal -->
+          <div class="modal-container" id="modal">
+            <div class="modal">
+              <i class="fas fa-times close-icon" id="close-model"></i>
+              <div class="modal-header">
+                <h3>Add Bookmark</h3>
+              </div>
+              <div class="modal-content">
+                <form id="bookmark-form">
+                  <!-- website Name -->
+                  <div class="from-group">
+                    <label for="website-name" class="form-label">Website Name</label>
+                    <input type="text" class="form-input" id="website-name" />
+                  </div>
+                  <!-- website URL -->
+                  <div class="from-group">
+                    <label for="website-url" class="form-label">Website URL</label>
+                    <input type="text" class="form-input" id="website-url" />
+                  </div>
+                  <button type="submit"> Save </button>
+                </form>
+              </div>
+            </div>
+          </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>

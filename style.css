@@ -1,0 +1,548 @@
+/**************************************************General**************************************************/
+  :root {
+  /*Day*/
+  --pcl:  #374151;
+  --scl: #D1D5DB;
+  --bgcl:  #F3F4F6;
+
+  /*Night*/
+  --pcn: #E5E7EB;
+  --scn: #374151;
+  --bgcn: #111827;
+  }
+
+  body {
+  background-color: var(--bgcl);
+  font-family: 'DM sans-serif;';
+  }
+
+  a, button, .play-pause, .next-prev, select, svg, i, li, #progressBar, .btittle h1 {
+  cursor: pointer;
+  }
+
+/************************************************Left Navbar************************************************/
+  .nav-left {
+  overflow-y: auto;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 5vw;
+  height: 100vh;
+  transition: 0.3s ease;
+  background-color: var(--bgcl);
+  border-right: solid var(--pcl) 2px;
+  z-index: 99;
+  }
+    .nav-left::-webkit-scrollbar {
+    width: 5px;
+    background: transparent;
+    }
+
+    .nav-left::-webkit-scrollbar-thumb {
+    background: var(--pcl);
+    border-radius: 5px;
+    }
+
+  .dnv {
+  overflow: hidden;
+  background-color: transparent;
+  position: relative;
+  width: 80%;
+  margin: 1vh auto;
+  font-family: 'DM Sans', sans-serif;
+  display: flex;
+  align-items: center;
+  border-radius: 15px;
+  border: none;
+  transition: 0.3s ease;
+  text-decoration: none;
+  height: 48%;
+  }
+    .dnv svg {
+    display: block;
+    position: relative;
+    height: 60%;
+    width: 4vw;
+    fill: var(--pcl);
+    }
+    .dnv p {
+    position: relative;
+    right: 0;
+    width: 0;
+    left: .2vw;
+    font-size: 15px;
+    color: var(--pcl);
+    }
+
+  .dnvl {
+  align-items: center;
+  justify-content: center;
+  cursor: auto;
+  }
+    .dnvl svg {
+    position: relative;
+    height: 100%;
+    width: 4vw;
+    fill: var(--pcl);
+    }
+
+    .nav-left button {
+    width: 80%;
+    }
+      .nav-left button svg {
+    display: block;
+    position: relative;
+    height: 60%;
+    width: 3.6vw;
+      }
+
+    .nav-left button p {
+    position: relative;
+    right: 0;
+    width: 0;
+    left: .5vw;
+    font-size: 15px;
+    }
+
+  .dnv:hover, .active {
+  background-color: var(--scl);
+  }
+
+  .hl {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  width: 80%;
+  border: solid var(--pcl) 1px;
+  }
+
+/***************************************************Apps***************************************************/
+ 
+/**************************************************Color**************************************************/
+      .color-content {
+      display: none;
+      position: fixed;
+      bottom: 0;
+      left: 5vw;
+      height: 44%;
+      width: calc(67% - 5vw);
+      color: var(--pcl);
+      background-color: var(--bgcl);
+      font-family: 'DM Sans', sans-serif;
+      z-index: 5;
+      }
+      .cshow {
+      display: block;
+      position: fixed;
+      bottom: 0;
+      left: 5vw;
+      height: 44%;
+      width: calc(67% - 5vw);
+      color: var(--pcl);
+      background-color: var(--bgcl);
+      font-family: 'DM Sans', sans-serif;
+      }
+      .color-content h1, .color-content h4 {
+      position: absolute;
+      top: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+      width: 100%;
+      height: 10%;
+      font-size: 20px;
+      letter-spacing: 1px;
+      }
+      .color-content h4 {
+      top: unset;
+      height: 20%;
+      font-size: 17px;
+      bottom: 0;
+      text-align: center;
+      }
+      .dcc {
+      position: relative;
+      top: 10%;
+      height: 70%;
+      width: 50%;
+      float: left;
+      }
+        .dcc h2 {
+        position: relative;
+        text-align: center;
+        width: 100%;
+        font-size: 17px;
+        }
+        .dcc p {
+        position: relative;
+        margin: 0;
+        font-size: 17px;
+        padding: 0 1.5vw;
+        }
+        .idc {
+        position: relative;
+        margin: 0;
+        display: flex;
+        width: 100%;
+        }
+        .dcc input, .ddcc {
+        position: relative;
+        width: 40%;
+        margin: 0 1vw;
+        height: 5vh;
+        outline: none;
+        border-radius: 15px;
+        }
+
+/*************************************************Bookmarks*************************************************/
+  .bookmarks {
+  position: absolute;
+  top: 0;
+  left: 5vw;
+  width: calc(100% - 5vw);
+  height: 100vh;
+  background-color: var(--bgcl);
+  overflow-x: auto;
+  font-family: 'DM Sans', sans-serif;
+  }
+      .bookmarks::-webkit-scrollbar
+      {
+      width: 5px;
+      background: transparent;
+      }
+
+      .bookmarks::-webkit-scrollbar-thumb
+      {
+      background: var(--pcl);
+      border-radius: 5px;
+      }
+      .bookmarks iframe {
+      position: relative;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      }
+  .bookmarks .btittle, .bookmarks .otittle {
+  position: relative;
+  height: 10%;
+  color: var(--pcl);
+  background-color: transparent;
+  display: flex;
+  align-items: center;
+  }
+    .btittle p, .btittle h1, .otittle p {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 35px;
+    top: 0;
+    margin: 0;
+    height: 100%;
+    width: 80%;
+    }
+    .btittle h1 {
+    float: right;
+    height: 70%;
+    width: 15%;
+    border-radius: 15px;
+    border: solid var(--pcl) 2px;
+    }
+    .btittle h1:hover {
+    background-color: var(--scl);
+    transition: 0.3s ease;
+    }
+    .otittle p {
+    width: 100%;
+    }
+
+  .bookmarks .container, .bookmarks .ocontainer {
+  position: relative;
+  width: 100%;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  }
+    .bookmarks .bitem, .bookmarks .oitem {
+    position: relative;
+    display: list-item;
+    height: 15vh;
+    width:  calc(100%/4.24);
+    margin: 1vh .5vw;
+    border-radius: 10px;
+    text-decoration: none;
+    border: solid var(--pcl) 2px;
+    overflow: hidden;
+    }
+    .bookmarks .bitem::marker, .bookmarks .oitem::marker {
+    display: none;
+    color: transparent;
+    }
+    .bookmarks .bimg, .bookmarks .oimg {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, 0);
+    height: 45%;
+    margin: 5% 0 0 0;
+    border-radius: 15px;
+    }
+    .bookmarks .fa-times {
+    position: absolute;
+    top: 1vh;
+    right: 1vw;
+    color: var(--pcl);
+    }
+    .bookmarks .blink, .bookmarks .olink {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 40%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: var(--pcl);
+    transition: 0.3s ease;
+    }
+    .bookmarks .blink:hover, .bookmarks .olink:hover {
+    background-color: var(--scl);
+    }
+
+  .bookmarks .modal-container {
+  display: none;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 5vw);
+  z-index: 100;
+  }
+
+  .bookmarks .show-modal {
+  display: block;
+  position: fixed;
+  background: rgba(0, 0, 0, 0.6);
+  top: 0;
+  right: 0;
+  height: 100%;
+  width: calc(100% - 5vw);
+  z-index: 100;
+  }
+
+  .bookmarks .modal {
+  position: absolute;
+  width: 40%;
+  height: 40vh;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 15px;
+  overflow: hidden;
+  font-family: 'DM Sans', sans-serif;
+  animation: modalopen 1s;
+  background-color: var(--bgcl);
+  border: solid var(--pcl) 2px;
+  }
+
+  .bookmarks .close-icon {
+  position: absolute;
+  top: 0;
+  right: 0;
+  height: 7.5vh;
+  width: 10%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--pcl);
+  cursor: pointer;
+  font-size: 25px;
+  }
+
+  .bookmarks .modal-header {
+  position: relative;
+  padding: 0 2vw;
+  background: transparent;
+  color: var(--pcl);
+  width: 78%;
+  height: 7.5vh;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  }
+
+  .bookmarks .modal-content {
+  height: 32vh;
+  }
+
+  .bookmarks .from-group {
+  position: relative;
+  display: block;
+  width: 90%;
+  height: 12vh;
+  margin: 0 auto;
+  overflow: hidden;
+  }
+
+  .bookmarks .form-label {
+  position: relative;
+  height: 45%;
+  display: flex;
+  align-items: center;
+  color: var(--pcl);
+  }
+
+  .bookmarks .form-input {
+  position: relative;
+  width: 97%;
+  height: 45%;
+  border-radius: 15px;
+  border: none;
+  outline: none;
+  padding: 0 0 0 12px;
+  background-color: var(--scl);
+  color: var(--pcl);
+  }
+
+  .bookmarks button {
+  position: relative;
+  width: 50%;
+  padding: 1vh 0;
+  display: block;
+  margin: 1vh auto;
+  border-radius: 15px;
+  border: none;
+  border: solid var(--pcl) 2px;
+  background-color: var(--bgcl);
+  color: var(--pcl);
+  }
+
+  @keyframes modalopen {
+    from {
+      opacity: 0;
+    }
+
+    to {
+      opacity: 1;
+    }
+  }
+
+/***************************************************Mode***************************************************/
+    .dnv .m2 {
+    display: block;
+    }
+    .dnv .m1 {
+    display: none;
+    }
+    .dnv.mactive .m1 {
+    display: block;
+    }
+    .dnv.mactive .m2 {
+    display: none;
+    }
+
+    body.dark, body.dark .nav-left, body.dark .dnv:hover, body.dark .active,
+    body.dark .sshow, body.dark .mySlides form div, body.dark .box, body.dark #myBox, 
+    body.dark .mshow, body.dark .gshow, body.dark .google-content, body.dark .todo-content,
+    body.dark .calendar-days li.event-day:before   {
+    background-color: var(--bgcn);
+    }
+
+    body.dark .nav-left::-webkit-scrollbar-thumb, body.dark #progressBar,
+    body.dark #progressBar::-webkit-slider-thumb, body.dark .gshow::-webkit-scrollbar-thumb,
+    body.dark .google-content::-webkit-scrollbar-thumb, body.dark .bookmarks::-webkit-scrollbar-thumb {
+    background-color: var(--pcn);
+    }
+
+    body.dark .dnv:hover, body.dark .active, body.dark .mySlides form input,
+    body.dark .time select, body.dark #myDiv select, body.dark .timebtn button,
+    body.dark .bookmarks .blink:hover, body.dark .bookmarks .olink:hover, body.dark .btittle h1:hover {
+    background-color: var(--scn);
+    }
+
+    body.dark .play-pause, body.dark #track-artist, body.dark #track-title, body.dark .next-prev,
+    body.dark #currentTime, body.dark #durationTime, body.dark #myBox, body.dark #myBox h3,
+    body.dark .dnv p, body.dark .mySlides form input, body.dark .mySlides input::placeholder,
+    body.dark .prev, body.dark .next, body.dark .gshow a, body.dark .google-content a,
+    body.dark #date, body.dark .fa-check-circle, body.dark .item, body.dark .item input.text,
+    body.dark .fa-plus-circle, body.dark #inputt::placeholder, body.dark #col-1, body.dark #clock,
+    body.dark .calendar-change-year-slider, body.dark .calendar-month li, body.dark .calendar-week,
+    body.dark .calendar-days li:after, body.dark .calendar-month li.active, body.dark .add-event-day-field,
+    body.dark .fa-plus-circle, .nav-left, body.dark .bookmarks .btittle, body.dark .bookmarks .fa-times,
+    body.dark .bookmarks .blink, body.dark .bookmarks .otittle, body.dark .bookmarks .olink,
+    body.dark.bookmarks .close-icon, body.dark .bookmarks .modal-header, body.dark .bookmarks .form-label {
+    color: var(--pcn);
+    }
+
+    body.dark .item i.de:hover, body.dark .calendar-days li.another-month:after {
+    color: var(--scn);
+    }
+
+    body.dark .dnv svg, body.dark .dnvl svg, body.dark .ntd svg {
+    fill: var(--pcn);
+    }
+
+    body.dark .hl, body.dark .todo-content, body.dark .tshow, body.dark .google-content, body.dark .gshow,
+    body.dark .btittle h1, body.dark .bookmarks .bitem, body.dark .bookmarks .oitem {
+    border: solid var(--pcn) 2px;
+    }
+
+    body.dark .player-container {
+    box-shadow: 0 0 18px var(--pcn);
+    border: solid var(--pcn) 2px;
+    }
+
+    body.dark .time select, body.dark #myDiv select, body.dark .timebtn button {
+    color: var(--pcn);
+    border: solid var(--pcn) 2px;
+    }
+
+    body.dark .nav-left {
+    border-right: solid var(--pcn) 2px;
+    }
+
+    body.dark #inputt, body.dark .add-event-day-field::placeholder {
+    color: var(--pcn);
+    border-bottom: solid var(--pcn) 3px
+    }
+
+    body.dark .header {
+    background-image: url('../multimedia/images/fondo-todo-dark.gif');
+    }
+
+    body.dark .calendar-content, body.dark .cashow, body.dark .calendar-days li.active-day:after,
+    body.dark .sdiv, body.dark .tdiv {
+    background-color: var(--bgcn);
+    border: solid var(--pcn) 2px;
+    }
+
+    body.dark .calendar-month {
+    border-bottom: dashed var(--pcn) 3px;
+    }
+  
+    body.dark .calendar-days li.selected-day:after, body.dark .calendar-days li.another-month:hover:after,
+    body.dark .left-side, body.dark .calendar-days li.active-day:after, body.dark .cshow,
+    body.dark .color-content, body.dark .bookmarks, body.dark .bookmarks .modal {
+    background: var(--bgcn);
+    color: var(--pcn);
+    }
+
+    body.dark .calendar-days li.selected-day:after, body.dark .calendar-days li:hover:after {
+    background: var(--pcn);
+    color: var(--bgcn);
+    }
+
+    body.dark .bookmarks .form-input {
+    background-color: var(--scn);
+    color: var(--pcn);
+    }
+
+    body.dark .bookmarks button {
+    background-color: var(--bgcn);
+    border: solid var(--pcn) 2px;
+    color: var(--pcn);
+    }
